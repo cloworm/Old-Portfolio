@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>Cloworm&#39;s Homepage</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Jul 2016 16:36:37 -0400</pubDate>
-    <lastBuildDate>Tue, 05 Jul 2016 16:36:37 -0400</lastBuildDate>
+    <link>http://cloworm.github.io/</link>
+    <atom:link href="http://cloworm.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 05 Jul 2016 16:47:24 -0400</pubDate>
+    <lastBuildDate>Tue, 05 Jul 2016 16:47:24 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Tue, 05 Jul 2016 16:33:45 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/07/05/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/07/05/welcome-to-jekyll.html</guid>
+        <link>http://cloworm.github.io/jekyll/update/2016/07/05/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://cloworm.github.io/jekyll/update/2016/07/05/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
