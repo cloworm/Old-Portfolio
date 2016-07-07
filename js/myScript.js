@@ -8,15 +8,14 @@ var points = 15;
 var length = 40;
 
 var path = new Path({
-  strokeColor: '#ff3399',
+  strokeColor: randomColors(),
   strokeWidth: 10,
-  strokeCap: 'round'
+  strokeCap: 'round',
 });
 
 var start = view.center / [10, 1];
 for (var i = 0; i < points; i++)
   path.add(start + new Point(i * length, 0));
-
 function onMouseMove(event) {
   path.firstSegment.point = event.point;
   for (var i = 0; i < points - 1; i++) {
