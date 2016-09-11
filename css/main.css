@@ -76,7 +76,12 @@ a:hover {
   width: 100%;
 }
 
-.portfolio-nav .button {
+.contact-nav {
+  text-align: center;
+  width: 100%;
+}
+
+.button {
   font-size: 3rem;
 }
 

@@ -55,4 +55,10 @@ $(document).ready(function() {
           scrollTop: $("#portfolio").offset().top
       }, 600);
   });
+  $("#landing-button").click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: $("#landing").offset().top
+      }, 600);
+  });
 });
