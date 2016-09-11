@@ -28,7 +28,7 @@ function onMouseMove(event) {
   path.smooth({ type: 'continuous' });
 }
 
-function onMouseDown(event) {
+window.onMouseDown = function onMouseDown(event) {
   path.fullySelected = true;
   path.strokeColor = '#000000';
 }
@@ -42,7 +42,19 @@ function randomColors() {
     return color;
 }
 
-function onMouseUp(event) {
+window.onMouseUp = function onMouseUp(event) {
   path.fullySelected = false;
   path.strokeColor = randomColors();
 }
+
+$(document).ready(function() {
+  $(document).on('mousedown', '*', window.onMouseDown);
+  $(document).on('mouseup', '*', window.onMouseUp);
+
+  $("#button").click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: $("#portfolio").offset().top
+      }, 600);
+  });
+});

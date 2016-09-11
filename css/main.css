@@ -63,11 +63,15 @@ a:hover {
   height: 100%;
 }
 
-.nav {
+.portfolio-nav {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -25px;
+  bottom: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+.portfolio-nav .button {
+  font-size: 3rem;
 }
 
 canvas[resize] {
