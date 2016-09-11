@@ -61,6 +61,7 @@ a:hover {
 
 .portfolio-link {
   height: 100%;
+  position: relative;
 }
 
 .portfolio-nav {
@@ -72,6 +73,12 @@ a:hover {
 
 .portfolio-nav .button {
   font-size: 3rem;
+}
+
+.github-link {
+  position: absolute;
+  bottom: 5px;
+  right: 18px;
 }
 
 canvas[resize] {
@@ -91,4 +98,8 @@ p img {
   height: 1em;
   width: auto;
   vertical-align: middle;
+}
+
+.card {
+  padding: 5px;
 }
