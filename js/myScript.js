@@ -28,21 +28,37 @@ function onMouseMove(event) {
   path.smooth({ type: 'continuous' });
 }
 
-function onMouseDown(event) {
+window.onMouseDown = function onMouseDown(event) {
   path.fullySelected = true;
-  path.strokeColor = '#000000';
+  path.strokeColor = '#FFF';
 }
 
 function randomColors() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+    var red = (Math.round(Math.random() * 127) + 127).toString(16);
+    var green = (Math.round(Math.random() * 127) + 127).toString(16);
+    var blue = (Math.round(Math.random() * 127) + 127).toString(16);
+    return '#' + red + green + blue;
 }
 
-function onMouseUp(event) {
+window.onMouseUp = function onMouseUp(event) {
   path.fullySelected = false;
   path.strokeColor = randomColors();
 }
+
+$(document).ready(function() {
+  $(document).on('mousedown', '*', window.onMouseDown);
+  $(document).on('mouseup', '*', window.onMouseUp);
+
+  $("#button").click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: $("#portfolio").offset().top
+      }, 600);
+  });
+  $("#landing-button").click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: $("#landing").offset().top
+      }, 600);
+  });
+});
