@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   <link href="css/main.css" rel="stylesheet">
   <!-- Load the Paper.js library -->
   <script type="text/javascript" src="js/paper-full.js"></script>
@@ -9,10 +11,27 @@
   <script type="text/paperscript" src="js/myScript.js" canvas="myCanvas"></script>
 </head>
 <body>
-  <canvas id="myCanvas" resize="true"></canvas>
-  <div class="content">
-    <h2>Hi, I'm Chloe Echikson</h2>
-    <p><img src="github.png"><a href="http://github.com/cloworm" target="_blank"> cloworm</a></p>
+  <div class="landing">
+    <canvas id="myCanvas" resize="true"></canvas>
+    <div class="intro">
+      <h2>Hi, I'm Chloe Echikson</h2>
+      <p><img src="github.png"><a href="http://github.com/cloworm" target="_blank"> cloworm</a></p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="portfolio">
+      <p>Portfolio</p>
+      <div class="row center-xs">
+        <div class="col-xs-4">
+          <div class="portfolio-item">
+            <div class="portfolio-link row middle-xs">
+              <div class="col-xs-12">
+                <a href="http://regex-playground.cloworm.com" target="_blank">RegEx Playground</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
 </body>
 </html>
